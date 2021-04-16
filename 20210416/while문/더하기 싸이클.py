@@ -80,44 +80,53 @@
 # 두자리수일떄는 둘이 더하고 더한수가 한자리 수 일때 앞 수의[1]과 더한 수의[0]을 str로 더함
 # 두자리수일떄는 둘이 더하고 더한수가 두자리 수 일때 앞 수의[1]과 더한 수의[1]을 str로 더함
 
-# 26--> 8 --> 68
-# 68--> 14 --> 84
-# 84--> 12 --> 42
+# 26--> 8 --> 68(60+8)
+# 68--> 14 --> 84(80+4)
+# 84--> 12 --> 42(40+2)
 # 42 --> 6 --> 26
 # 26 --> 8 --> 68
 
+#
+# sum_r = input()
+# sum_n = int(sum_r)
+# sum_l = int
+# count = 0
+# while True:
+#     count = count + 1
+#     if(len(sum_r)==1):
+#         sum_l = sum_r+"0"
+#         # print(sum_l)
+#         sum_r = sum_l[0] + sum_r[0]
+#         # print(sum_r)
+#     else:
+#         sum_l = int(sum_r[0]) + int(sum_r[1]) #처음에 8, 다음에 14,
+#         if (len(str(sum_l))==1):
+#             sum_r = (str(sum_r)[1]) + (str(sum_l))[0]
+#             print(sum_r,"위에",type(sum_r),count)
+#
+#         else:
+#             sum_r = (str(sum_r)[1]) + (str(sum_l))[1]
+#             print(sum_r,"밑에",count)
+#
+#     if ((int(sum_n) == int(sum_r))):
+#         print(count)
+#         break;
 
-sum_r = input()
-sum_n = int(sum_r)
-sum_l = int
-count = 0
-while True:
-    count = count + 1
-    if(len(sum_r)==1):
-        sum_l = sum_r+"0"
-        # print(sum_l)
-        sum_r = sum_l[0] + sum_r[0]
-        # print(sum_r)
-    else:
-        sum_l = int(sum_r[0]) + int(sum_r[1]) #처음에 8, 다음에 14,
-        if (len(str(sum_l))==1):
-            sum_r = (str(sum_r)[1]) + (str(sum_l))[0]
-            print(sum_r,"위에",type(sum_r),count)
 
-        else:
-            sum_r = (str(sum_r)[1]) + (str(sum_l))[1]
-            print(sum_r,"밑에",count)
+a=t=int(input())
+c=0
+while ( (c<1) or (a-t) ):
+    t =  ( (t%10) * 10) + ( ((t%10) + (t//10))%10 )
+    print(t)
+    # t=t%10*10+t*11//10%10
+    c+=1
+print(c)
 
-    if ((int(sum_n) == int(sum_r))):
-        print(count)
-        break;
-
-
+#
+#
 # a=t=int(input())
 # c=0
-# while(c<1)+a-t):
+# while(c<1)+a-t:
 #     t=t%10*10+t*11//10%10;
 #     c+=1
 # print(c)
-
-
