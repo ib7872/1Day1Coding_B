@@ -77,8 +77,9 @@
 # 절대값을 이용할 것
 
 # 321, 333, 345, 357, 369
-
+count = 0
 num = int(input())
+
 if (num>99):
     count = 99
     for num in range(100,num+1):
