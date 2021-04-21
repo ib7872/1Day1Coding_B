@@ -72,3 +72,7 @@ for i in sentence:
     # 119 120 121 122 --> 9
 
 print(sentence_length + len(sentence))
+
+
+# a = {c: i for i, cs in enumerate(("ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"), 3) for c in cs}
+# print(sum(a[c] for c in input()))
