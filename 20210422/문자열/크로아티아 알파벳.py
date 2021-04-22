@@ -105,6 +105,9 @@ a=input()
 c=['c=','c-','dz=','d-','lj','nj','s=','z=']
 for i in c:
     a=a.replace(i,"a")
+    print(a)
 print(len(a))
 
 # 1. string을 입력 받음
+# 2. 모든 크로아티아 문자를 a로 replace 시켜버림
+# 3. 우회해서 푸는 방법
