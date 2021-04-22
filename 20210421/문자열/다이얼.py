@@ -74,5 +74,19 @@ for i in sentence:
 print(sentence_length + len(sentence))
 
 
-# a = {c: i for i, cs in enumerate(("ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"), 3) for c in cs}
+# -------------------------------------------------------------------------------------------------------------
+
+# a = {c: i
+#      for i, cs in enumerate(("ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"), 3)
+#      for c in cs}
 # print(sum(a[c] for c in input()))
+
+# -------------------------------------------------------------------------------------------------------------
+word=str(input().lower())
+alphabet=['abc','def','ghi', 'jkl','mno','pqrs','tuv','wxyz']
+time=0
+for a in word:
+    for b in alphabet:
+        if a in b:
+            time+=alphabet.index(b)+3
+print(time)
